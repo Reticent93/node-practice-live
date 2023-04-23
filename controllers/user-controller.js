@@ -1,18 +1,20 @@
 const pool = require("../db/db");
 const queries = require("./queries");
 
-const getUsers = (req, res) => {
+const getUsers = (req, res, next) => {
   pool.query(queries.getUsers, (error, results) => {
     if (error) throw error;
     res.status(200).json(results.rows);
+    next();
   });
 };
 
-const getUserById = (req, res) => {
+const getUserById = (req, res, next) => {
   const id = parseInt(req.params.id);
   pool.query(queries.getUserById, [id], (error, results) => {
     if (error) throw error;
     res.status(200).json(results.rows);
+    next();
   });
 };
 
@@ -41,12 +43,13 @@ const updateUser = (req, res) => {
         const noUser = !results.rows.length;
         if (noUser) {
             res.status(404).json({ message: "User does not exist" });
+        } else {
+          pool.query(queries.updateUser, [name, email, id], (error, results) => {
+              if (error) throw error;
+              res.status(200).send('User updated successfully');
+          });
         }
-        if (error) throw error;
-        pool.query(queries.updateUser, [name, email, id], (error, results) => {
-            if (error) throw error;
-            res.status(200).send('User updated successfully');
-        });
+        
     });
 }
 
@@ -57,15 +60,15 @@ const deleteUser = (req, res) => {
         const noUser = !results.rows.length;
         if (noUser) {
             res.status(404).json({ message: "User does not exist" });
-        }
-        if (error) throw error;
-        pool.query(queries.deleteUser, [id], (error, results) => {
+        } else {
+          pool.query(queries.deleteUser, [id], (error, results) => {
             if (error) throw error;
-        });
-        res.status(200).send('User deleted successfully');
+              res.status(200).send('User deleted successfully');
+          });
+        }
+        
     });
 }
-
 
 
 module.exports = {
