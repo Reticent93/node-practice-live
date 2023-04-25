@@ -1,5 +1,3 @@
-// const pool = require("../db/db");
-// const queries = require("./queries");
 const admin = require("firebase-admin");
 const { hashPassword, comparePassword } = require("../middleware/bcrypt");
 
