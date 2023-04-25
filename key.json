@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "live-chair-practice",
+    "private_key_id": "60b8217badfcc50a48d680efe47c8fc6cecc3622",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+wWUxUtTTX3gY\nBZxLMXfjnObLq7jSucDMCdB+9zqtZ4O6c8StH19l7y9H/P0qeITa7sdPuysieIme\n/X38wul3LA0mmMge198YdNLRk2Jqbm513/sg8qjT35th2fWmNiUTdrUGE/ELZmqS\nPTTRR1x2CqhYWRWCngzqCpLNI0AxSTOWlWRkeEzjjbYFZ4HaK+CGDIN0tavX99aN\nZuTQxOwyteRbpRTPwOQ3EtsN/SLSmI/c5TvSNev+LFl+O9HiQNEgYwVMop+yLWpR\nZ/cA5e+3QRvqyHl4SsVkFpER3cNeagrD9WXxuAP6FYZniLU41S4wR4xfL+hGCUTN\ntzgDUqgVAgMBAAECggEACfP2TzYGs8ax8fLs/kFlA4POyQa7PIeDp0HF1rIYpi6W\nAXcD5pKR/DQYL/Xj0cD7EZ9O1/qonAJVD+4jEjqrStQKFZ74Jh/WXKTP0S6S/oGn\nks/ufwAaTf/HUDo6poMBuTvC4z/MHm+oFNxLsrW5/dC9iuqPBEMx4k5N7ZUuxsN3\nbEXvqyKM47Qy0jyhHvVw4KmuM/Qn6tSoH7T5An5WUoXdsVeJlLaekdcVDnpBw1uS\nJzdXw5sNKRlwpaf+CMrZBJusALuucp1+nqWU1eKGRT362efNmkNnOPM6hJyR+B9x\nPb8CL3R5C8z+v12/9hF73XGC3y6sPfy/Qa0zZFH2sQKBgQDpweUxGGmEmByGCawK\nCfaxWFwehsrWtFEYFuCGRBcu6l0qTCyO5g+DFJeRANxfWCrKn/QJ71wVB+iVRWef\noWC3QewqkF1RxZjXDiR0jBO4PbOQN9YOPTh3Un5wgz0/pTOE1P9LBMBq7fXFyeec\nNXfWgGNbcR0BoSADpnqTOW8xHQKBgQDQ6AORD1N4Dt62cfwf1zP2FhowLVacKw6y\ndRhgdgslnfpOY60opmlzXgZu4ViYPDqGVIZdRiw+8BSyD2F9Px/5kXOgf23nrJNI\n8us1PGI1GLvq3FXp3AfABhsuKDSXSUJmQGU/PN+ahjAbUyOZkcyFjBPuZe3PphKG\nLyz96d3ZWQKBgG59IJj5If7zayAL+E5ycTFYQ4qGSd/8MQyC27N7Ab5CNrEkejc9\nFP3vQMjgMEm8wdUuj8oWYl7qcwwDVzyDqdRVC4z+2a0qCdk0rRSNlVCTkYlMaxgl\n5ce4rVz/G3c23cgeaWELKOwh9/Z6Pch/GVrBKrVxHLXFc/1ltjBaiG0dAoGBAIef\niOk87PCNntMNbyRwvyAtOzU5yfe7EGCVGo1NNXFnfWA03+77Eoy+ZyjHDZBP0aLx\n7wVREFqP3K+4wo7gU27fmhSBhiWY6Um7wy2dlRhphV41S2V23mUw0aaGnZX2DrB5\ncAG9EGGuaj7jG8KQYBn3Vd04uUpMw8vvhqMVmFyJAoGBANwYCCtLbqGsaLVcNgtG\nPdZcZ8IOSvZS3rdoU0+zKps771/JmzlUFbuvEy7gFc/vDoYP87IbwoyfcnCd2pvE\nNMNIU1yahnRm1/+UGdAh81admVadMgPhCXHyPlToqAH14j89Swyy6CJInLzpptc4\nI/tCyvHWQc2fUmNbBPbzdI9N\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-eph0x@live-chair-practice.iam.gserviceaccount.com",
+    "client_id": "102679648063871082496",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-eph0x%40live-chair-practice.iam.gserviceaccount.com"
+  }
