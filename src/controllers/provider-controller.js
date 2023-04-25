@@ -1,8 +1,4 @@
-// const pool = require("../db/db");
-// const queries = require("./queries");
-
 const admin = require('firebase-admin');
-
 const db = admin.firestore();
 
 const getProviders = async (req, res) => {
