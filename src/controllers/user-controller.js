@@ -41,15 +41,18 @@ const getUserById = async (req, res) => {
 
 const createUser = async (req, res) => {
   try {
-    console.log(req.body);
-    const id = req.body.email;
+  
+    const newDocRef = db.collection("users").doc();
+    const id = newDocRef.id;
     const userJson = {
+      id: id,
       name: req.body.name,
       email: req.body.email,
       password: await hashPassword(req.body.password),
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     };
-    await db.collection("users").add(userJson);
-    console.log(db.collection("users").doc(id));
+    await newDocRef.set(userJson);
     res.status(201).send("User created successfully");
   } catch (error) {
     console.log(error.message);
@@ -61,11 +64,19 @@ const updateUser = async (req, res) => {
   try {
     const id = req.params.id;
     const userRef = db.collection("users").doc(id);
-    await userRef.update(req.body);
+    console.log(userRef);
+    const user = await userRef.update({
+      id: id,
+      name: req.body.name,
+      email: req.body.email,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    })
     if (!userRef) {
       res.status(404).send("No user record found");
       return;
     } else {
+      await userRef.update(user);
+      console.log(user);
       res.status(200).send("User updated successfully");
     }
   } catch (error) {

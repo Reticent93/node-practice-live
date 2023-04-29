@@ -24,6 +24,7 @@ const userRoutes = require("./src/routes/userRoutes");
 const providerRoutes = require("./src/routes/providerRoutes");
 const insuranceRoutes = require("./src/routes/insuranceRoutes");
 const appointmentRoutes = require("./src/routes/appointmentRoutes");
+const medicationRoutes = require("./src/routes/medicationRoutes");
 
 const app = express();
 app.use(express.json());
@@ -41,5 +42,8 @@ app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/providers", providerRoutes);
 app.use("/api/v1/insurances", insuranceRoutes)
 app.use("/api/v1/appointments", appointmentRoutes)
+app.use("/api/v1/medication", medicationRoutes)
+
+
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
